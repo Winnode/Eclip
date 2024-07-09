@@ -1,2 +1,138 @@
 #!/bin/bash
-base64 -d <<< "IyEvYmluL2Jhc2gNCg0KZXhwb3J0IFJFRD0nXDAzM1swOzMxbScNCmV4cG9ydCBHUkVFTj0nXDAzM1swOzMybScNCmV4cG9ydCBZRUxMT1c9J1wwMzNbMTszM20nDQpleHBvcnQgTkM9J1wwMzNbMG0nDQoNCnByb21wdCgpIHsNCiAgICBsb2NhbCBtZXNzYWdlPSIkMSINCiAgICByZWFkIC1wICIkbWVzc2FnZSIgaW5wdXQNCiAgICBlY2hvICIkaW5wdXQiDQp9DQoNCmV4ZWN1dGVfYW5kX3Byb21wdCgpIHsNCiAgICBsb2NhbCBtZXNzYWdlPSIkMSINCiAgICBsb2NhbCBjb21tYW5kPSIkMiINCiAgICBlY2hvIC1lICIke1lFTExPV30ke21lc3NhZ2V9JHtOQ30iDQogICAgZXZhbCAiJGNvbW1hbmQiDQogICAgZWNobyAtZSAiJHtHUkVFTn1Eb25lLiR7TkN9Ig0KfQ0KDQplY2hvIC1lICIke1lFTExPV31JbnN0YWxsaW5nIFJ1c3QuLi4ke05DfSINCmVjaG8NCmN1cmwgLS1wcm90byAnPWh0dHBzJyAtLXRsc3YxLjIgLXNTZiBodHRwczovL3NoLnJ1c3R1cC5ycyB8IHNoIC1zIC0tIC15DQpzb3VyY2UgIiRIT01FLy5jYXJnby9lbnYiDQplY2hvIC1lICIke0dSRUVOfVJ1c3QgaW5zdGFsbGVkOiAkKHJ1c3RjIC0tdmVyc2lvbikke05DfSINCmVjaG8NCg0KZWNobyAtZSAiJHtZRUxMT1d9UmVtb3ZpbmcgTm9kZS5qcy4uLiR7TkN9Ig0KZWNobw0Kc3VkbyBhcHQtZ2V0IHJlbW92ZSAteSBub2RlanMNCmVjaG8NCg0KZWNobyAtZSAiJHtZRUxMT1d9SW5zdGFsbGluZyBOVk0gYW5kIE5vZGUuanMgTFRTLi4uJHtOQ30iDQplY2hvDQpjdXJsIC1vLSBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbnZtLXNoL252bS92MC4zOS4zL2luc3RhbGwuc2ggfCBiYXNoICYmIGV4cG9ydCBOVk1fRElSPSIvdXNyL2xvY2FsL3NoYXJlL252bSI7IFsgLXMgIiROVk1fRElSL252bS5zaCIgXSAmJiBcLiAiJE5WTV9ESVIvbnZtLnNoIjsgWyAtcyAiJE5WTV9ESVIvYmFzaF9jb21wbGV0aW9uIiBdICYmIFwuICIkTlZNX0RJUi9iYXNoX2NvbXBsZXRpb24iOyBzb3VyY2Ugfi8uYmFzaHJjOyBudm0gaW5zdGFsbCAtLWx0czsgbnZtIHVzZSAtLWx0cw0KZWNobyAtZSAiJHtHUkVFTn1Ob2RlLmpzIGluc3RhbGxlZDogJChub2RlIC12KSR7TkN9Ig0KZWNobw0KDQplY2hvIC1lICIke1lFTExPV31DbG9uaW5nIHJlcG9zaXRvcnkgYW5kIGluc3RhbGxpbmcgbnBtIGRlcGVuZGVuY2llcy4uLiR7TkN9Ig0KZWNobw0KZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9FY2xpcHNlLUxhYm9yYXRvcmllcy1JbmMvdGVzdG5ldC1kZXBvc2l0DQpjZCB0ZXN0bmV0LWRlcG9zaXQNCm5wbSBpbnN0YWxsDQplY2hvDQoNCmVjaG8gLWUgIiR7WUVMTE9XfUluc3RhbGxpbmcgU29sYW5hIENMSS4uLiR7TkN9Ig0KZWNobw0Kc2ggLWMgIiQoY3VybCAtc1NmTCBodHRwczovL3JlbGVhc2Uuc29sYW5hLmNvbS9zdGFibGUvaW5zdGFsbCkiDQpleHBvcnQgUEFUSD0iJEhPTUUvLmxvY2FsL3NoYXJlL3NvbGFuYS9pbnN0YWxsL2FjdGl2ZV9yZWxlYXNlL2JpbjokUEFUSCINCmVjaG8gLWUgIiR7R1JFRU59U29sYW5hIENMSSBpbnN0YWxsZWQ6ICQoc29sYW5hIC0tdmVyc2lvbikke05DfSINCmVjaG8NCg0KZWNobyAtZSAiJHtZRUxMT1d9R2VuZXJhdGluZyBuZXcgU29sYW5hIGtleXBhaXIuLi4ke05DfSINCmVjaG8NCnNvbGFuYS1rZXlnZW4gbmV3IC1vIH4vbXktd2FsbGV0Lmpzb24NCmVjaG8NCmVjaG8gLWUgIiR7WUVMTE9XfVNhdmUgdGhlc2UgbW5lbW9uaWMgcGhyYXNlcyBpbiBzYWZlIFBsYWNlLklmIHRoZXJlIHdpbGwgYW55IEFpcmRyb3AgaW4gZnV0dXJlLCB5b3Ugd2lsbCBiZSBlbGlnaWJsZSBmcm9tIHRoaXMgd2FsbGV0IHNvIHNhdmUgaXQke05DfSINCmVjaG8NCg0KcmVhZCAtcCAiRW50ZXIgeW91ciBtbmVvbWljIHBocmFzZTogIiBtbmVtb25pYw0KZWNobw0KDQpjYXQgPDwgRU9GID4gc2VjcmV0cy5qc29uDQp7DQogICJzZWVkUGhyYXNlIjogIiRtbmVtb25pYyINCn0NCkVPRg0KDQpjYXQgPDwgJ0VPRicgPiBkZXJpdmUtd2FsbGV0LmpzDQpjb25zdCB7IHNlZWRQaHJhc2UgfSA9IHJlcXVpcmUoJy4vc2VjcmV0cy5qc29uJyk7DQpjb25zdCB7IEhETm9kZVdhbGxldCB9ID0gcmVxdWlyZSgnZXRoZXJzJyk7DQoNCmNvbnN0IG1uZW1vbmljV2FsbGV0ID0gSEROb2RlV2FsbGV0LmZyb21QaHJhc2Uoc2VlZFBocmFzZSk7DQpjb25zb2xlLmxvZygpOw0KY29uc29sZS5sb2coJ0VUSEVSRVVNIFBSSVZBVEUgS0VZOicsIG1uZW1vbmljV2FsbGV0LnByaXZhdGVLZXkpOw0KY29uc29sZS5sb2coKTsNCmNvbnNvbGUubG9nKCfigIvigItTRU5EIFNFUE9MSUEgRVRIIFRPIFRISVMgQUREUkVTUzonLCBtbmVtb25pY1dhbGxldC5hZGRyZXNzKTsNCkVPRg0KDQppZiAhIG5wbSBsaXN0IGV0aGVycyAmPi9kZXYvbnVsbDsgdGhlbg0KICBlY2hvICJldGhlcnMuanMgbm90IGZvdW5kLiBJbnN0YWxsaW5nLi4uIg0KICBlY2hvDQogIG5wbSBpbnN0YWxsIGV0aGVycw0KICBlY2hvDQpmaQ0KDQpub2RlIGRlcml2ZS13YWxsZXQuanMNCmVjaG8NCg0KZWNobyAtZSAiJHtZRUxMT1d9Q29uZmlndXJpbmcgU29sYW5hIENMSS4uLiR7TkN9Ig0KZWNobw0Kc29sYW5hIGNvbmZpZyBzZXQgLS11cmwgaHR0cHM6Ly90ZXN0bmV0LmRldjIuZWNsaXBzZW5ldHdvcmsueHl6Lw0Kc29sYW5hIGNvbmZpZyBzZXQgLS1rZXlwYWlyIH4vbXktd2FsbGV0Lmpzb24NCmVjaG8NCmVjaG8gLWUgIiR7R1JFRU59U29sYW5hIEFkZHJlc3M6ICQoc29sYW5hIGFkZHJlc3MpJHtOQ30iDQplY2hvDQoNCmlmIFsgLWQgInRlc3RuZXQtZGVwb3NpdCIgXTsgdGhlbg0KICAgIGV4ZWN1dGVfYW5kX3Byb21wdCAiUmVtb3ZpbmcgdGVzdG5ldC1kZXBvc2l0IEZvbGRlci4uLiIgInJtIC1yZiB0ZXN0bmV0LWRlcG9zaXQiDQpmaQ0KDQpyZWFkIC1wICJFbnRlciB5b3VyIFNvbGFuYSBhZGRyZXNzOiAiIHNvbGFuYV9hZGRyZXNzDQpyZWFkIC1wICJFbnRlciB5b3VyIEV0aGVyZXVtIFByaXZhdGUgS2V5OiAiIGV0aGVyZXVtX3ByaXZhdGVfa2V5DQpyZWFkIC1wICJFbnRlciB0aGUgbnVtYmVyIG9mIHRpbWVzIHRvIHJlcGVhdCBUcmFuc2FjdGlvbiAoNC01IHR4IFJlY29tbWVuZGVkKTogIiByZXBlYXRfY291bnQNCmdhc19saW1pdD0iNDAwMDAwMCINCmVjaG8NCg0KZm9yICgoaT0xOyBpPD1yZXBlYXRfY291bnQ7IGkrKykpOyBkbw0KICAgIGVjaG8gLWUgIiR7WUVMTE9XfVJ1bm5pbmcgQnJpZGdlIFNjcmlwdCAoVHggJGkpLi4uJHtOQ30iDQogICAgZWNobw0KICAgIG5vZGUgZGVwb3NpdC5qcyAiJHNvbGFuYV9hZGRyZXNzIiAweDExYjhkYjZiYjc3YWQ4Y2I5YWYwOWQwODY3YmI2YjkyNDc3ZGQ2OGUgIiRnYXNfbGltaXQiICIkZXRoZXJldW1fcHJpdmF0ZV9rZXkiIGh0dHBzOi8vMXJwYy5pby9zZXBvbGlhDQogICAgZWNobw0KICAgIHNsZWVwIDMNCmRvbmUNCg0KZWNobyAtZSAiJHtSRUR9SXQgd2lsbCB0YWtlIDQgbWlucywgRG9uJ3QgZG8gYW55dGhpbmcsIEp1c3QgV2FpdCR7UkVTRVR9Ig0KZWNobw0KDQpzbGVlcCAyNDANCg0KZXhlY3V0ZV9hbmRfcHJvbXB0ICJDcmVhdGluZyB0b2tlbi4uLiIgInNwbC10b2tlbiBjcmVhdGUtdG9rZW4gLS1lbmFibGUtbWV0YWRhdGEgLXAgVG9rZW56UWRCTmJMcVA1VkVoZGtBUzZFUEZMQzFQSG5CcUNYRXBQeHVFYiINCmVjaG8NCg0KdG9rZW5fYWRkcmVzcz0kKHByb21wdCAiRW50ZXIgeW91ciBUb2tlbiBBZGRyZXNzOiAiKQ0KZWNobw0KZXhlY3V0ZV9hbmRfcHJvbXB0ICJDcmVhdGluZyB0b2tlbiBhY2NvdW50Li4uIiAic3BsLXRva2VuIGNyZWF0ZS1hY2NvdW50ICR0b2tlbl9hZGRyZXNzIg0KZWNobw0KDQpleGVjdXRlX2FuZF9wcm9tcHQgIk1pbnRpbmcgdG9rZW4uLi4iICJzcGwtdG9rZW4gbWludCAkdG9rZW5fYWRkcmVzcyAxMDAwMCINCmVjaG8NCmV4ZWN1dGVfYW5kX3Byb21wdCAiQ2hlY2tpbmcgdG9rZW4gYWNjb3VudHMuLi4iICJzcGwtdG9rZW4gYWNjb3VudHMiDQplY2hvDQoNCmV4ZWN1dGVfYW5kX3Byb21wdCAiQ2hlY2tpbmcgUHJvZ3JhbSBBZGRyZXNzLi4uIiAic29sYW5hIGFkZHJlc3MiDQplY2hvDQplY2hvIC1lICIke1lFTExPV31TdWJtaXQgRmVlZGJhY2sgYXQke05DfTogaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlwUUxTZkpRQ0ZCS0hwaXkySFZ3OWxUakNqN2swQnFOS25QNkcxY2QwWWRLaGFQTFdELUFBL3ZpZXdmb3JtP3BsaT0xIg0KZWNobw==" | tr -d '\r' | bash
+
+export RED='\033[0;31m'
+export GREEN='\033[0;32m'
+export YELLOW='\033[1;33m'
+export NC='\033[0m'
+
+prompt() {
+    local message="$1"
+    read -p "$message" input
+    echo "$input"
+}
+
+execute_and_prompt() {
+    local message="$1"
+    local command="$2"
+    echo -e "${YELLOW}${message}${NC}"
+    eval "$command"
+    echo -e "${GREEN}Done.${NC}"
+}
+
+echo -e "${YELLOW}Installing Rust...${NC}"
+echo
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+source "$HOME/.cargo/env"
+echo -e "${GREEN}Rust installed: $(rustc --version)${NC}"
+echo
+
+echo -e "${YELLOW}Removing Node.js...${NC}"
+echo
+sudo apt-get remove -y nodejs
+echo
+
+echo -e "${YELLOW}Installing NVM and Node.js LTS...${NC}"
+echo
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && export NVM_DIR="/usr/local/share/nvm"; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"; [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"; source ~/.bashrc; nvm install --lts; nvm use --lts
+echo -e "${GREEN}Node.js installed: $(node -v)${NC}"
+echo
+
+echo -e "${YELLOW}Cloning repository and installing npm dependencies...${NC}"
+echo
+git clone https://github.com/Eclipse-Laboratories-Inc/testnet-deposit
+cd testnet-deposit
+npm install
+echo
+
+echo -e "${YELLOW}Installing Solana CLI...${NC}"
+echo
+sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+echo -e "${GREEN}Solana CLI installed: $(solana --version)${NC}"
+echo
+
+echo -e "${YELLOW}Generating new Solana keypair...${NC}"
+echo
+solana-keygen new -o ~/my-wallet.json
+echo
+echo -e "${YELLOW}Save these mnemonic phrases in safe Place.If there will any Airdrop in future, you will be eligible from this wallet so save it${NC}"
+echo
+
+read -p "Enter your mneomic phrase: " mnemonic
+echo
+
+cat << EOF > secrets.json
+{
+  "seedPhrase": "$mnemonic"
+}
+EOF
+
+cat << 'EOF' > derive-wallet.js
+const { seedPhrase } = require('./secrets.json');
+const { HDNodeWallet } = require('ethers');
+
+const mnemonicWallet = HDNodeWallet.fromPhrase(seedPhrase);
+console.log();
+console.log('ETHEREUM PRIVATE KEY:', mnemonicWallet.privateKey);
+console.log();
+console.log('​​SEND SEPOLIA ETH TO THIS ADDRESS:', mnemonicWallet.address);
+EOF
+
+if ! npm list ethers &>/dev/null; then
+  echo "ethers.js not found. Installing..."
+  echo
+  npm install ethers
+  echo
+fi
+
+node derive-wallet.js
+echo
+
+echo -e "${YELLOW}Configuring Solana CLI...${NC}"
+echo
+solana config set --url https://testnet.dev2.eclipsenetwork.xyz/
+solana config set --keypair ~/my-wallet.json
+echo
+echo -e "${GREEN}Solana Address: $(solana address)${NC}"
+echo
+
+if [ -d "testnet-deposit" ]; then
+    execute_and_prompt "Removing testnet-deposit Folder..." "rm -rf testnet-deposit"
+fi
+
+read -p "Enter your Solana address: " solana_address
+read -p "Enter your Ethereum Private Key: " ethereum_private_key
+read -p "Enter the number of times to repeat Transaction (4-5 tx Recommended): " repeat_count
+gas_limit="4000000"
+echo
+
+for ((i=1; i<=repeat_count; i++)); do
+    echo -e "${YELLOW}Running Bridge Script (Tx $i)...${NC}"
+    echo
+    node deposit.js "$solana_address" 0x11b8db6bb77ad8cb9af09d0867bb6b92477dd68e "$gas_limit" "$ethereum_private_key" https://1rpc.io/sepolia
+    echo
+    sleep 3
+done
+
+echo -e "${RED}It will take 4 mins, Don't do anything, Just Wait${RESET}"
+echo
+
+sleep 240
+
+execute_and_prompt "Creating token..." "spl-token create-token --enable-metadata -p TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+echo
+
+token_address=$(prompt "Enter your Token Address: ")
+echo
+execute_and_prompt "Creating token account..." "spl-token create-account $token_address"
+echo
+
+execute_and_prompt "Minting token..." "spl-token mint $token_address 10000"
+echo
+execute_and_prompt "Checking token accounts..." "spl-token accounts"
+echo
+
+execute_and_prompt "Checking Program Address..." "solana address"
+echo
+echo -e "${YELLOW}Submit Feedback at${NC}: https://docs.google.com/forms/d/e/1FAIpQLSfJQCFBKHpiy2HVw9lTjCj7k0BqNKnP6G1cd0YdKhaPLWD-AA/viewform?pli=1"
+echo
